@@ -47,7 +47,7 @@ export default function Home() {
 
               <div className={styles.redes}>
 
-                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/óscar-veiga-menéndez-2b0502223" target="_blank" rel="noreferrer">
                   <div className={styles.botonSocial} style={{ marginRight: 30 }}>
                     <SiLinkedin size={30} />
                     <span>LinkedIn</span>
