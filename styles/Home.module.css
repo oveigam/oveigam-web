@@ -29,6 +29,7 @@
 
 .techIcons {
   display: flex;
+  
 }
 
 .techIcons svg {
@@ -86,4 +87,41 @@
 
 .gutters {
   width: 70%;
+}
+
+
+@media (max-width: 1300px) {
+
+  .gutters {
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .seccion {
+    overflow: hidden;
+  }
+
+  .inicio h1 {
+    font-size: 2.2rem;
+  }
+
+  .inicio h2 {
+    font-size: 1.1rem;
+  }
+
+  .inicio h3 {
+    font-size: 0.9rem;
+  }
+
+  .inicioContent {
+    width: 90%;
+  }
+
+  .botonera {
+    margin-top: 20px;
+  }
+  
 }

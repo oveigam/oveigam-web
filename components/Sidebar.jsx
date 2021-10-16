@@ -1,7 +1,6 @@
-import styles from '../styles/Sidebar.module.css'
+import styles from '../styles/Navigation.module.css'
 import Link from 'next/link'
-import { VscHome, VscCode } from 'react-icons/vsc'
-import { MdWorkOutline } from 'react-icons/md'
+import { VscHome, VscCode, VscBriefcase } from 'react-icons/vsc'
 
 const ICON_SIZE = 30
 
@@ -22,7 +21,7 @@ const Sidebar = () => {
                 <Link href="#trabajo" >
                     <div className={styles.navButton} >
                         <div>
-                            <MdWorkOutline size={ICON_SIZE} />
+                            <VscBriefcase size={ICON_SIZE} />
                         </div>
                         <span>TRABAJO</span>
                     </div>

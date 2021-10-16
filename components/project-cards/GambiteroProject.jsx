@@ -47,7 +47,7 @@ const GambiteroProject = ({style}) => {
                 </div>
                 <h3 style={{ color: COLOR }}>Features</h3>
                 <ul>
-                    <li> Crea planes ("gambiteos") e invita a tus amigos </li>
+                    <li>Crea planes ("gambiteos") e invita a tus amigos </li>
                     <li>Organiza tus planes de manera detallada</li>
                     <ul>
                         <li>Informa: indica cualquier detalle del plan (lugar, hora, etc.)</li>

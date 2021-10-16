@@ -42,3 +42,36 @@
     font-style: italic;
     font-weight: normal;
 }
+
+@media (max-width: 640px) {
+
+    .container {
+        margin: 5px;
+    }
+
+    .eventItem {
+        margin: 15px;
+        padding: 10px;
+    }
+    
+    .eventItem h3 {
+        font-size: 1rem;
+    }
+    
+    .eventItem h4 {
+        font-size: 0.85rem;
+    }
+    
+    .eventItem h5 {
+        font-size: 0.8rem;
+    }
+    
+    .eventItem li {
+        font-size: 0.9rem;
+    }
+
+    .fechaItem {
+        font-size: 0.85rem;
+    }
+
+}
