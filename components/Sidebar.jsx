@@ -2,13 +2,14 @@ import styles from '../styles/Navigation.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import { VscHome, VscCode, VscBriefcase } from 'react-icons/vsc'
+import { SiGithub, SiLinkedin } from 'react-icons/si'
 
 const ICON_SIZE = 30
 
 const Sidebar = () => {
     return (
         <aside className={styles.sidebar}>
-            
+
             <div className={styles.logoContainer}>
                 <Image className={styles.logoSmall} src="/images/logo-small.png" width={256} height={256} />
             </div>
@@ -46,6 +47,14 @@ const Sidebar = () => {
                     </div>
                 </Link>
             </nav>
+            <div className={styles.footer}>
+                <a href="https://www.linkedin.com/in/óscar-veiga-menéndez-2b0502223" target="_blank" rel="noreferrer">
+                    <SiLinkedin size={15} />
+                </a>
+                <a href="https://github.com/oveigam" target="_blank" rel="noreferrer">
+                    <SiGithub size={15} />
+                </a>
+            </div>
         </aside >
     );
 }
