@@ -1,0 +1,100 @@
+.container {
+    /* display: flex;
+    align-items: center; */
+    margin: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #c4c4c4;
+}
+
+.cabecera {
+    display: flex;
+    align-items: center;
+}
+
+.nombre {
+    margin: 0;
+    margin-left: 20px;
+    font-size: 4rem;
+}
+
+.content {
+    margin-top: 30px;
+    max-width: 800px;
+}
+
+.content p {
+    font-size: 1.4rem;
+    font-style: italic;
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+.content h3 {
+    margin-top: 40px;
+}
+
+.content li {
+    font-size: 1.1rem;
+}
+
+.tech {
+    display: flex;
+}
+
+.tech div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    width: 100px;
+}
+
+.tech h4 {
+    margin: 0;
+}
+
+.botonera {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.repo {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+.repo span {
+    margin-left: 10px;
+}
+
+.gambitero {
+    background-color: #B33485;
+}
+
+.gambitero:hover {
+    background-color: #B33485dc;
+}
+  
+.gambitero:active {
+    background-color: #9b2e73;
+}
+
+.ffx {
+    background-color: #543cab;
+}
+
+.ffx:hover {
+    background-color: #543cabdc;
+}
+  
+.ffx:active {
+    background-color: #402e81;
+}

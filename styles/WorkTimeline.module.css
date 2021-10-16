@@ -1,0 +1,44 @@
+.container {
+    display: grid;
+    grid-template-columns: 15% 50px 70%;
+    margin: 25px;
+}
+
+.fechaItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+.timeItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    height: 100%;
+    width: 2px;
+    background-color: #007acc;
+}
+
+.dot {
+    position: absolute;
+    background-color: #007acc;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.eventItem {
+    margin: 30px;
+    padding: 30px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.eventItem h4 {
+    font-style: italic;
+    font-weight: normal;
+}
