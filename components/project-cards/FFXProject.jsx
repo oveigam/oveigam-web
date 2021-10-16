@@ -9,14 +9,14 @@ const FFXProject = () => {
     return (
         <div className={styles.container}>
             <div className={styles.cabecera}>
-                <Image src={`/images/ffx.png`} width={100} height={100} />
+                <Image src={`/images/ffx.png`} width={100} height={100} alt="ffx monster arena app logo" />
                 <div>
                     <h1 className={styles.nombre} style={{ color: COLOR }} >FFX: Monster Arena</h1>
                 </div>
             </div>
             <div className={styles.content} >
                 <p style={{ width: '80%' }}>
-                    Tracker para llevar de manera fácil la cuenta de los monstruos capturados en el "minijuego" de la zona de entrenamiento de Final Fantasy X
+                    Tracker para llevar de manera fácil la cuenta de los monstruos capturados en el &quot;minijuego&quot; de la zona de entrenamiento de Final Fantasy X
                 </p>
                 <h3 style={{ color: COLOR }}>Technologies</h3>
                 <div className={styles.tech}>
@@ -39,7 +39,7 @@ const FFXProject = () => {
 
             <div className={styles.botonera}>
 
-                <a href="https://github.com/oveigam/ffxmonsterarena" target="_blank">
+                <a href="https://github.com/oveigam/ffxmonsterarena" target="_blank" rel="noreferrer">
                     <div className={`${styles.repo} ${styles.ffx}`} >
                         <SiGithub size={25} />
                         <span>GITHUB</span>

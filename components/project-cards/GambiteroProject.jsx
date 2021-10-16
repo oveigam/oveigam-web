@@ -9,14 +9,14 @@ const GambiteroProject = ({style}) => {
     return (
         <div className={styles.container} style={style}>
             <div className={styles.cabecera}>
-                <Image src={`/images/gambitero.png`} width={100} height={100} />
+                <Image src={`/images/gambitero.png`} width={100} height={100} alt="gambitero app logo" />
                 <div>
-                    <h1 className={styles.nombre} style={{ color: COLOR }} >Gambitero</h1>
+                    <h1 className={styles.nombre} style={{ color: COLOR }}>Gambitero</h1>
                 </div>
             </div>
             <div className={styles.content} >
                 <p>
-                    Gestiona y organiza planes ("gambiteos") con tus amigos!
+                    Gestiona y organiza planes (&quot;gambiteos&quot;) con tus amigos!
                 </p>
                 <h3 style={{ color: COLOR }}>Technologies</h3>
                 <div className={styles.tech}>
@@ -47,7 +47,7 @@ const GambiteroProject = ({style}) => {
                 </div>
                 <h3 style={{ color: COLOR }}>Features</h3>
                 <ul>
-                    <li>Crea planes ("gambiteos") e invita a tus amigos </li>
+                    <li>Crea planes (&quot;gambiteos&quot;) e invita a tus amigos </li>
                     <li>Organiza tus planes de manera detallada</li>
                     <ul>
                         <li>Informa: indica cualquier detalle del plan (lugar, hora, etc.)</li>
@@ -61,7 +61,7 @@ const GambiteroProject = ({style}) => {
 
             <div className={styles.botonera}>
 
-                <a href="https://github.com/oveigam/gambitero-app" target="_blank">
+                <a href="https://github.com/oveigam/gambitero-app" target="_blank" rel="noreferrer">
                     <div className={`${styles.repo} ${styles.gambitero}`} >
                         <SiGithub size={25} />
                         <span>GITHUB</span>

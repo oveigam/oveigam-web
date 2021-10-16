@@ -47,14 +47,14 @@ export default function Home() {
 
               <div className={styles.redes}>
 
-                <a href="https://www.linkedin.com/" target="_blank">
+                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
                   <div className={styles.botonSocial} style={{ marginRight: 30 }}>
                     <SiLinkedin size={30} />
                     <span>LinkedIn</span>
                   </div>
                 </a>
 
-                <a href="https://github.com/oveigam" target="_blank">
+                <a href="https://github.com/oveigam" target="_blank" rel="noreferrer">
                   <div className={styles.botonSocial}>
                     <SiGithub size={30} />
                     <span>Github</span>
