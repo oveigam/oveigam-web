@@ -14,7 +14,6 @@ export default function Home() {
     <>
       <Head>
         <title>Óscar Veiga Menéndez</title>
-        <meta property="og:url" content="oscarinadev.com" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Óscar Veiga Menéndez" />
         <meta name="twitter:card" content="summary" />
