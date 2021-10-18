@@ -1,6 +1,5 @@
 import styles from '../styles/Navigation.module.css'
 import Link from 'next/link'
-import Image from 'next/image'
 import { VscHome, VscCode, VscBriefcase } from 'react-icons/vsc'
 import { SiGithub, SiLinkedin } from 'react-icons/si'
 
@@ -11,11 +10,9 @@ const Sidebar = () => {
         <aside className={styles.sidebar}>
 
             <div className={styles.logoContainer}>
-                <Image className={styles.logoSmall} src="/images/logo-small.png" width={256} height={256} />
-            </div>
-
-            <div className={styles.logoContainer}>
-                <Image className={styles.logoBig} src="/images/logo.png" width={256} height={256} />
+                <img className={styles.o} src="/images/o.png" width={50} height={50} draggable={false} />
+                <img className={styles.v} src="/images/v.png" width={50} height={50} draggable={false} />
+                <img className={styles.m} src="/images/m.png" width={50} height={50} draggable={false} />
             </div>
 
             <nav className={styles.botonera}>

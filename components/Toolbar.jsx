@@ -9,7 +9,9 @@ const Toolbar = () => {
     return (
         <nav className={styles.toolbar}>
 
-            <Image src="/images/logo-small.png" width={60} height={60} />
+            <div style={{ marginLeft: 10, height: '100%' }}>
+                <Image src="/images/logo.png" width={60} height={60} draggable={false} />
+            </div>
 
             <div style={{ flex: 1 }} />
 

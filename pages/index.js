@@ -20,6 +20,7 @@ export default function Home() {
         <meta property="og:description" content="Desarrollador de software" />
         <meta property="og:image" content="https://www.oscarinadev.com/images/logo.png" />
       </Head>
+
       <SidebarLayout>
 
         <section id="inicio" className={`${styles.seccion} ${styles.inicio}`}>

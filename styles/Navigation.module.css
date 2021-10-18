@@ -22,25 +22,32 @@
     height: 200px;
     position: absolute;
     top: 0;
-    margin: 5px;
+    margin-left: 20px;
+    margin-top: 35px;
 }
 
-.logoSmall {
-    opacity: 1;
-    transition: opacity 0.3s ease-in;
+.o {
+    position: absolute;
 }
 
-.logoBig {
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
+.v {
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease-in;
 }
 
-.sidebar:hover .logoSmall {
-    opacity: 0;
+.m {
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease-in;
 }
 
-.sidebar:hover .logoBig {
-    opacity: 1;
+.sidebar:hover .v {
+    left: 50px;
+}
+
+.sidebar:hover .m {
+    left: 105px;
 }
 
 .navButton {
