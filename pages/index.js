@@ -18,7 +18,7 @@ export default function Home() {
         <meta property="og:title" content="Óscar Veiga Menéndez" />
         <meta name="twitter:card" content="summary" />
         <meta property="og:description" content="Desarrollador de software" />
-        <meta property="og:image" content="https://www.oscarinadev.com/images/logo.png" />
+        <meta property="og:image" content="https://www.oscarinadev.com/images/logo-letters.png" />
       </Head>
 
       <SidebarLayout>
