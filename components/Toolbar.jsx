@@ -1,6 +1,5 @@
 import styles from '../styles/Navigation.module.css'
 import Link from 'next/link'
-import Image from 'next/image'
 import { VscHome, VscCode, VscBriefcase } from 'react-icons/vsc'
 
 const ICON_SIZE = 25
@@ -8,12 +7,6 @@ const ICON_SIZE = 25
 const Toolbar = () => {
     return (
         <nav className={styles.toolbar}>
-
-            <div style={{ marginLeft: 10, height: '100%' }}>
-                <Image src="/images/logo.png" width={60} height={60} draggable={false} />
-            </div>
-
-            <div style={{ flex: 1 }} />
 
             <Link href="#inicio" >
                 <div className={styles.toolbarButton} title="hola" >
