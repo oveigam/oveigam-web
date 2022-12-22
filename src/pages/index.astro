@@ -1,81 +1,83 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import { Icon } from "astro-icon";
+import LinkButton from "../components/LinkButton.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+import TimelineSection from "../components/TimelineSection.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+<Layout title="Óscar Veiga Menéndez">
+  <main class="container mx-auto">
+    <section class="h-screen flex flex-col justify-center items-center">
+      <div class="flex flex-col gap-6">
+        <div>
+          <h1 class="text-8xl font-bold text-vsc-500">Óscar</h1>
+          <h1 class="text-8xl font-bold text-gray-700">Veiga Menéndez</h1>
+        </div>
+        <h2 class="text-4xl font-semibold text-gray-400">Desarrrollador de software</h2>
+        <ul
+          class="flex [&>li]:pr-3 [&>li>svg]:w-10 [&>li>svg]:h-10 [&>li>svg]:duration-100 [&>li>svg]:ease-in-out [&>li:hover>svg]:-translate-y-6"
+        >
+          <li><Icon pack="logos" name="java" /></li>
+          <li><Icon pack="logos" name="javascript" /></li>
+          <li>
+            <Icon class="text-[#3178C6]" pack="simple-icons" name="typescript" />
+          </li>
+          <li><Icon pack="logos" name="spring-icon" /></li>
+          <li><Icon pack="simple-icons" name="express" /></li>
+          <li><Icon pack="logos" name="react" /></li>
+          <li><Icon pack="cib" name="next-js" /></li>
+          <li><Icon pack="logos" name="expo-icon" /></li>
+          <li><Icon pack="logos" name="prisma" /></li>
+        </ul>
+        <div class="flex justify-end gap-8 mt-2">
+          <LinkButton
+            href="https://www.linkedin.com/in/%C3%B3scar-veiga-men%C3%A9ndez-2b0502223/"
+            icon={{ pack: "fa-brands", name: "linkedin" }}>LinkedIn</LinkButton
+          >
+          <LinkButton href="https://github.com/oveigam" icon={{ pack: "fa-brands", name: "github" }}>Github</LinkButton>
+        </div>
+      </div>
+    </section>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+    <section class="p-48">
+      <SectionTitle title="Vida laboral" />
+      <TimelineSection
+        date="2015 - 2017"
+        title="Ciclo Superior en Desarrollo de Aplicaciones Multiplataforma"
+        company="IES Fernando Wirtz Suárez"
+      />
+      <TimelineSection
+        flip
+        date="2017 - 2018"
+        title="Mantenimiento en Integración de datos EAI"
+        client="Inditex"
+        company="Altia Consultores S.L."
+        tech={["ESQL", "IBM MQ / MQSeries"]}
+      />
+      <TimelineSection
+        date="2018 - 2020"
+        title="Mantenimiento SAFEPAL"
+        company="Altia Consultores S.L."
+        client="Inditex"
+        tech={["Java", "Spring", "GWT"]}
+      />
+      <TimelineSection
+        flip
+        date="2020 - 2022"
+        title="Mantenimiento Maestros Financieros"
+        company="Altia Consultores S.L."
+        client="Inditex"
+        tech={["Java", "Javascript", "Spring", "React"]}
+      />
+      <TimelineSection
+        date="2022 - Present"
+        title="Aplicación gestión ciclo de vida de hotel"
+        company="AT Sistemas"
+        client="Hoteles Meliá"
+        tech={["Typescript", "Express", "React"]}
+      />
+    </section>
+  </main>
+</Layout>
