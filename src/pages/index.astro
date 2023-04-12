@@ -1,66 +1,12 @@
 ---
-import GitHubButton from "../components/GitHubButton.astro";
-import LinkedInButton from "../components/LinkedInButton.astro";
-import SectionTitle from "../components/SectionTitle.astro";
-import TimelineSection from "../components/TimelineSection.astro";
-import TechList from "../components/tech-list/TechList.astro";
+import Presentation from "../components/sections/Presentation.astro";
+import VidaLaboral from "../components/sections/VidaLaboral.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Óscar Veiga Menéndez">
   <main class="container mx-auto">
-    <section class="flex h-screen flex-col items-center justify-center">
-      <div class="flex flex-col gap-8">
-        <div>
-          <h1 class="text-8xl font-bold text-vsc-500">Óscar</h1>
-          <h1 class="text-8xl font-bold text-gray-700">Veiga Menéndez</h1>
-        </div>
-        <h2 class="text-4xl font-semibold text-gray-400">Desarrrollador de software</h2>
-        <TechList />
-        <div class="mt-4 flex justify-end gap-8">
-          <LinkedInButton />
-          <GitHubButton />
-        </div>
-      </div>
-    </section>
-
-    <section class="p-48">
-      <SectionTitle title="Vida laboral" />
-      <TimelineSection
-        date="2015 - 2017"
-        title="Ciclo Superior en Desarrollo de Aplicaciones Multiplataforma"
-        company="IES Fernando Wirtz Suárez"
-      />
-      <TimelineSection
-        flip
-        date="2017 - 2018"
-        title="Mantenimiento en Integración de datos EAI"
-        client="Inditex"
-        company="Altia Consultores S.L."
-        tech={["ESQL", "IBM MQ / MQSeries"]}
-      />
-      <TimelineSection
-        date="2018 - 2020"
-        title="Mantenimiento SAFEPAL"
-        company="Altia Consultores S.L."
-        client="Inditex"
-        tech={["Java", "Spring", "GWT"]}
-      />
-      <TimelineSection
-        flip
-        date="2020 - 2022"
-        title="Mantenimiento Maestros Financieros"
-        company="Altia Consultores S.L."
-        client="Inditex"
-        tech={["Java", "Javascript", "Spring", "React"]}
-      />
-      <TimelineSection
-        date="2022 - Presente"
-        title="Aplicación gestión ciclo de vida de hotel"
-        company="AT Sistemas"
-        client="Hoteles Meliá"
-        tech={["Typescript", "Express", "React"]}
-      />
-    </section>
+    <Presentation />
+    <VidaLaboral />
   </main>
 </Layout>
