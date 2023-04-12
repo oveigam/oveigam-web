@@ -1,13 +1,13 @@
 ---
-type Props = { href: string };
+type Props = { id: string; href: string };
 
-const { href } = Astro.props;
+const { id, href } = Astro.props;
 ---
 
 <a href={href} target="_blank" rel="noreferrer">
   <button
-    id="go to football guess web"
-    aria-label="go to football guess web"
+    id={id}
+    aria-label={id}
     class="flex h-[53.333px] w-[180px] items-center justify-center gap-2 rounded-md border border-solid border-gray-400 bg-black text-xl font-bold text-white"
   >
     <svg
