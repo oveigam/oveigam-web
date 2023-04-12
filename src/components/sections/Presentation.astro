@@ -2,6 +2,28 @@
 import GitHubButton from "../GitHubButton.astro";
 import LinkedInButton from "../LinkedInButton.astro";
 import TechList from "../tech-list/TechList.astro";
+
+import java from "../../assets/logos/java.svg";
+import spring from "../../assets/logos/spring.svg";
+import typescript from "../../assets/logos/typescript.svg";
+import react from "../../assets/logos/react.svg";
+import nextjs from "../../assets/logos/nextjs.svg";
+import expo from "../../assets/logos/expo.svg";
+import express from "../../assets/logos/express.svg";
+import trpc from "../../assets/logos/trpc.svg";
+import prisma from "../../assets/logos/prisma.svg";
+
+const stack = [
+  { name: "Java", image: java },
+  { name: "Spring", image: spring },
+  { name: "Typescript", image: typescript },
+  { name: "React + React Native", image: react },
+  { name: "NextJs", image: nextjs },
+  { name: "Expo", image: expo },
+  { name: "Express", image: express },
+  { name: "tRPC", image: trpc },
+  { name: "Prisma", image: prisma },
+];
 ---
 
 <section class="flex h-screen flex-col items-center justify-center">
@@ -11,7 +33,7 @@ import TechList from "../tech-list/TechList.astro";
       <h1 class="text-8xl font-bold text-gray-700">Veiga Menéndez</h1>
     </div>
     <h2 class="text-4xl font-semibold text-gray-400">Desarrrollador de software</h2>
-    <TechList />
+    <TechList stack={stack} />
     <div class="mt-4 flex justify-end gap-8">
       <LinkedInButton />
       <GitHubButton />

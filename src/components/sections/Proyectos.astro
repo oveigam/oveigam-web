@@ -1,0 +1,111 @@
+---
+import { Image } from "astro:assets";
+import SectionTitle from "../SectionTitle.astro";
+import TechList from "../tech-list/TechList.astro";
+
+import fooguess from "../../assets/projects/football-guess/icon.png";
+import fooguessScreen from "../../assets/projects/football-guess/screenshot.png";
+
+import ffx from "../../assets/projects/ffx-monster-tracker/icon.png";
+import ffxScreen from "../../assets/projects/ffx-monster-tracker/screenshot.png";
+
+import expo from "../../assets/logos/expo.svg";
+import nextjs from "../../assets/logos/nextjs.svg";
+import react from "../../assets/logos/react.svg";
+import trpc from "../../assets/logos/trpc.svg";
+import astro from "../../assets/logos/astro.svg";
+import preact from "../../assets/logos/preact.svg";
+
+import playstore from "../../assets/playstore.svg";
+import WebButton from "../WebButton.astro";
+
+const fooguessStack = [
+  { name: "React + React Native", image: react },
+  { name: "NextJs", image: nextjs },
+  { name: "Expo", image: expo },
+  { name: "tRPC", image: trpc },
+];
+
+const ffxStack = [
+  { name: "Astro", image: astro },
+  { name: "Preact", image: preact },
+];
+---
+
+<section class="pt-48 flex flex-col">
+  <SectionTitle title="Proyectos" revert />
+  <article class="w-full max-w-5xl mx-auto flex flex-col gap-4 justify-between lg:flex-row">
+    <div class="flex flex-col gap-8">
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-4">
+          <Image src={fooguess} alt="Footbal Guess Icon" width={40} height={40} draggable={false} />
+          <h2 class="text-4xl font-semibold">Football Guess</h2>
+        </div>
+        <p class="text-xl italic text-gray-700">Juego multijugador de adivinar jugadores de fútbol</p>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <h3 class="text-lg font-bold">Stack</h3>
+        <TechList stack={fooguessStack} />
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <h3 class="text-lg font-bold">Links</h3>
+        <div class="flex gap-8">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.oscarinadev.footballguess"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={playstore.src} alt="Go to gootball guess playstore" width={180} height={54} draggable={false} />
+          </a>
+          <WebButton href="https://footballguess.oscarinadev.com/" />
+        </div>
+      </div>
+
+      <ul class="italic">
+        <li><caption>* El server está desplegado gratuitamente en railway, es posible que esté caido.</caption></li>
+        <li><caption>* Los datos de jugadores son de octubre 2022 más o menos.</caption></li>
+      </ul>
+    </div>
+
+    <a
+      href="https://play.google.com/store/apps/details?id=com.oscarinadev.footballguess"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <Image class="m-auto lg:m-0" src={fooguessScreen} alt="Footbal Guess Screenshot" />
+    </a>
+  </article>
+
+  <article class="w-full mt-48 max-w-5xl mx-auto flex flex-col gap-4 justify-between lg:flex-row-reverse text-end">
+    <div class="flex flex-col gap-8 flex-1 items-end">
+      <div class="flex flex-col gap-2">
+        <div class="flex justify-end items-center gap-4">
+          <h2 class="text-4xl font-semibold">FFX Monster Tracker</h2>
+          <Image src={ffx} alt="FFX Monster Tracker Icon" width={40} height={40} draggable={false} />
+        </div>
+        <p class="text-xl italic text-gray-700">
+          Web para ayudar seguir el progreso del minijuego de captura de monstruos de Final Fantasy X
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <h3 class="text-lg font-bold">Stack</h3>
+        <TechList reverse stack={ffxStack} />
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <h3 class="text-lg font-bold">Links</h3>
+        <div class="flex gap-8">
+          <WebButton href="https://footballguess.oscarinadev.com/" />
+        </div>
+      </div>
+    </div>
+    <div class="flex items-end flex-1">
+      <a href="https://footballguess.oscarinadev.com/" target="_blank" rel="noreferrer">
+        <Image class="m-auto lg:m-0" src={ffxScreen} alt="Footbal Guess Screenshot" />
+      </a>
+    </div>
+  </article>
+</section>
