@@ -8,7 +8,7 @@ import TimelineSection from "../components/TimelineSection.astro";
 
 <Layout title="Óscar Veiga Menéndez">
   <main class="container mx-auto">
-    <section class="h-screen flex flex-col justify-center items-center">
+    <section class="flex h-screen flex-col items-center justify-center">
       <div class="flex flex-col gap-6">
         <div>
           <h1 class="text-8xl font-bold text-vsc-500">Óscar</h1>
@@ -16,7 +16,7 @@ import TimelineSection from "../components/TimelineSection.astro";
         </div>
         <h2 class="text-4xl font-semibold text-gray-400">Desarrrollador de software</h2>
         <ul
-          class="flex [&>li]:pr-3 [&>li>svg]:w-10 [&>li>svg]:h-10 [&>li>svg]:duration-100 [&>li>svg]:ease-in-out [&>li:hover>svg]:-translate-y-6"
+          class="flex [&>li:hover>svg]:-translate-y-6 [&>li>svg]:h-10 [&>li>svg]:w-10 [&>li>svg]:duration-100 [&>li>svg]:ease-in-out [&>li]:pr-3"
         >
           <li><Icon pack="logos" name="java" /></li>
           <li><Icon pack="logos" name="javascript" /></li>
@@ -30,7 +30,7 @@ import TimelineSection from "../components/TimelineSection.astro";
           <li><Icon pack="logos" name="expo-icon" /></li>
           <li><Icon pack="logos" name="prisma" /></li>
         </ul>
-        <div class="flex justify-end gap-8 mt-2">
+        <div class="mt-2 flex justify-end gap-8">
           <LinkButton
             href="https://www.linkedin.com/in/%C3%B3scar-veiga-men%C3%A9ndez-2b0502223/"
             icon={{ pack: "fa-brands", name: "linkedin" }}

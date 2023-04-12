@@ -13,22 +13,22 @@ const { date, title, client, company, tech, flip = false } = Astro.props;
 
 <div class={`flex items-stretch justify-center gap-12 min-h-[240px] ${flip ? "flex-row-reverse" : ""}`}>
   <p class={`flex-1 italic self-center ${!flip ? "text-end" : ""}`}>{date}</p>
-  <div class="w-[2px] bg-vsc-500 flex flex-col items-center justify-center">
-    <div class="w-3 h-3 rounded-full bg-vsc-500"></div>
+  <div class="flex w-[2px] flex-col items-center justify-center bg-vsc-500">
+    <div class="h-3 w-3 rounded-full bg-vsc-500"></div>
   </div>
   <div class={`flex-1 py-4 self-center`}>
     <h3 class={`text-xl font-bold ${flip ? "text-end" : ""}`}>
       {title}
     </h3>
-    <div class="mt-1 mb-3">
+    <div class="mb-3 mt-1">
       <h4 class={`text-lg italic text-gray-500 leading-5 ${flip ? "text-end" : ""}`}>{company}</h4>
-      {client && <h4 class={`italic text-gray-500 leading-5 ${flip ? "text-end" : ""}`}>{client}</h4>}
+      {client && <h4 class={`italic leading-5 text-gray-500 ${flip ? "text-end" : ""}`}>{client}</h4>}
     </div>
     {
       tech?.length && (
         <ul class="mx-5 list-disc">
           {tech.map((t) => (
-            <li class={flip ? "w-fit ml-auto -scale-x-100" : undefined}>
+            <li class={flip ? "ml-auto w-fit -scale-x-100" : undefined}>
               <div class={flip ? "-scale-x-100" : undefined}>{t}</div>
             </li>
           ))}
