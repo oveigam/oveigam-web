@@ -32,9 +32,9 @@ const ffxStack = [
 ];
 ---
 
-<section class="pt-48 flex flex-col">
+<section class="flex flex-col pt-48">
   <SectionTitle title="Proyectos" revert />
-  <article class="w-full max-w-5xl mx-auto flex flex-col gap-4 justify-between lg:flex-row">
+  <article class="mx-auto flex w-full max-w-5xl flex-col justify-between gap-4 lg:flex-row">
     <div class="flex flex-col gap-8">
       <div class="flex flex-col gap-2">
         <div class="flex items-center gap-4">
@@ -78,10 +78,10 @@ const ffxStack = [
     </a>
   </article>
 
-  <article class="w-full mt-48 max-w-5xl mx-auto flex flex-col gap-4 justify-between lg:flex-row-reverse text-end">
-    <div class="flex flex-col gap-8 flex-1 items-end">
+  <article class="mx-auto mt-48 flex w-full max-w-5xl flex-col justify-between gap-4 text-end lg:flex-row-reverse">
+    <div class="flex flex-1 flex-col items-end gap-8">
       <div class="flex flex-col gap-2">
-        <div class="flex justify-end items-center gap-4">
+        <div class="flex items-center justify-end gap-4">
           <h2 class="text-4xl font-semibold">FFX Monster Tracker</h2>
           <Image src={ffx} alt="FFX Monster Tracker Icon" width={40} height={40} draggable={false} />
         </div>
@@ -102,7 +102,7 @@ const ffxStack = [
         </div>
       </div>
     </div>
-    <div class="flex items-end flex-1">
+    <div class="flex flex-1 items-end">
       <a href="https://footballguess.oscarinadev.com/" target="_blank" rel="noreferrer">
         <Image class="m-auto lg:m-0" src={ffxScreen} alt="Footbal Guess Screenshot" />
       </a>
