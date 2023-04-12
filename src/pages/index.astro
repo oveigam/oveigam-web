@@ -1,9 +1,9 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import { Icon } from "astro-icon";
 import LinkButton from "../components/LinkButton.astro";
 import SectionTitle from "../components/SectionTitle.astro";
 import TimelineSection from "../components/TimelineSection.astro";
+import TechList from "../components/tech-list/TechList.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Óscar Veiga Menéndez">
@@ -15,34 +15,7 @@ import TimelineSection from "../components/TimelineSection.astro";
           <h1 class="text-8xl font-bold text-gray-700">Veiga Menéndez</h1>
         </div>
         <h2 class="text-4xl font-semibold text-gray-400">Desarrrollador de software</h2>
-        <ul
-          class="flex [&>li:hover>svg]:-translate-y-6 [&>li>svg]:h-10 [&>li>svg]:w-10 [&>li>svg]:duration-100 [&>li>svg]:ease-in-out [&>li]:pr-3"
-        >
-          <li title="Java">
-            <Icon pack="logos" name="java" />
-          </li>
-          <li title="Spring">
-            <Icon pack="logos" name="spring-icon" />
-          </li>
-          <li title="Typescript">
-            <Icon class="text-[#3178C6]" pack="simple-icons" name="typescript" />
-          </li>
-          <li title="React + React Native">
-            <Icon pack="logos" name="react" />
-          </li>
-          <li title="Next">
-            <Icon pack="cib" name="next-js" />
-          </li>
-          <li title="Expo">
-            <Icon pack="logos" name="expo-icon" />
-          </li>
-          <li title="Express">
-            <Icon pack="simple-icons" name="express" />
-          </li>
-          <li title="Prisma">
-            <Icon pack="logos" name="prisma" />
-          </li>
-        </ul>
+        <TechList />
         <div class="mt-2 flex justify-end gap-8">
           <LinkButton
             href="https://www.linkedin.com/in/%C3%B3scar-veiga-men%C3%A9ndez-2b0502223/"
