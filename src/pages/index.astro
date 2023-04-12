@@ -18,17 +18,30 @@ import TimelineSection from "../components/TimelineSection.astro";
         <ul
           class="flex [&>li:hover>svg]:-translate-y-6 [&>li>svg]:h-10 [&>li>svg]:w-10 [&>li>svg]:duration-100 [&>li>svg]:ease-in-out [&>li]:pr-3"
         >
-          <li><Icon pack="logos" name="java" /></li>
-          <li><Icon pack="logos" name="javascript" /></li>
-          <li>
+          <li title="Java">
+            <Icon pack="logos" name="java" />
+          </li>
+          <li title="Spring">
+            <Icon pack="logos" name="spring-icon" />
+          </li>
+          <li title="Typescript">
             <Icon class="text-[#3178C6]" pack="simple-icons" name="typescript" />
           </li>
-          <li><Icon pack="logos" name="spring-icon" /></li>
-          <li><Icon pack="simple-icons" name="express" /></li>
-          <li><Icon pack="logos" name="react" /></li>
-          <li><Icon pack="cib" name="next-js" /></li>
-          <li><Icon pack="logos" name="expo-icon" /></li>
-          <li><Icon pack="logos" name="prisma" /></li>
+          <li title="React + React Native">
+            <Icon pack="logos" name="react" />
+          </li>
+          <li title="Next">
+            <Icon pack="cib" name="next-js" />
+          </li>
+          <li title="Expo">
+            <Icon pack="logos" name="expo-icon" />
+          </li>
+          <li title="Express">
+            <Icon pack="simple-icons" name="express" />
+          </li>
+          <li title="Prisma">
+            <Icon pack="logos" name="prisma" />
+          </li>
         </ul>
         <div class="mt-2 flex justify-end gap-8">
           <LinkButton
@@ -73,7 +86,7 @@ import TimelineSection from "../components/TimelineSection.astro";
         tech={["Java", "Javascript", "Spring", "React"]}
       />
       <TimelineSection
-        date="2022 - Present"
+        date="2022 - Presente"
         title="Aplicación gestión ciclo de vida de hotel"
         company="AT Sistemas"
         client="Hoteles Meliá"
