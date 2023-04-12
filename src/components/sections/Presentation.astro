@@ -27,14 +27,24 @@ const stack = [
 ---
 
 <section class="flex h-screen flex-col items-center justify-center">
-  <div class="flex flex-col gap-8">
+  <div class="flex flex-col items-center gap-6 md:items-start md:gap-8">
     <div>
-      <h1 class="text-8xl font-bold text-vsc-500">Óscar</h1>
-      <h1 class="text-8xl font-bold text-gray-700">Veiga Menéndez</h1>
+      <h1
+        class="text-center text-5xl font-bold text-vsc-500 sm:text-6xl md:text-start md:text-7xl lg:text-8xl xl:text-8xl"
+      >
+        Óscar
+      </h1>
+      <h1
+        class="text-center text-5xl font-bold text-gray-700 sm:text-6xl md:text-start md:text-7xl lg:text-8xl xl:text-8xl"
+      >
+        Veiga Menéndez
+      </h1>
     </div>
-    <h2 class="text-4xl font-semibold text-gray-500">Desarrrollador de software</h2>
+    <h2 class="text-center text-xl font-semibold text-gray-500 sm:text-2xl md:text-start md:text-3xl lg:text-4xl">
+      Desarrrollador de software
+    </h2>
     <TechList stack={stack} />
-    <div class="mt-4 flex justify-end gap-8">
+    <div class="mt-4 flex w-full justify-center gap-8 md:justify-end">
       <LinkedInButton />
       <GitHubButton />
     </div>

@@ -2,16 +2,15 @@
 type Props = {
   name: string;
   image: ImageMetadata;
-  reverse?: boolean;
 };
 
-const { name, image, reverse = false } = Astro.props;
+const { name, image } = Astro.props;
 ---
 
-<li title={name} class={`group ${reverse ? "pl-3" : "pr-3"}`}>
+<li title={name} class={`group px-1.5`}>
   <img
     src={image.src}
-    class="h-10 w-10 duration-100 ease-in-out group-hover:-translate-y-4"
+    class="h-7 w-7 duration-100 ease-in-out group-hover:-translate-y-4 sm:h-9 sm:w-9 md:h-10 md:w-10"
     width={40}
     height={40}
     alt={`${name} icon`}

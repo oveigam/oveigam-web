@@ -13,5 +13,5 @@ const { stack, reverse } = Astro.props;
 ---
 
 <ul class={`flex ${reverse ? "flex-row-reverse" : ""}`}>
-  {stack.map(({ name, image }) => <TechItem reverse name={name} image={image} />)}
+  {stack.map(({ name, image }) => <TechItem name={name} image={image} />)}
 </ul>
