@@ -1,0 +1,18 @@
+---
+type Props = {
+  name: string;
+  image: ImageMetadata;
+};
+
+const { name, image } = Astro.props;
+---
+
+<li title={name} class="group pr-3">
+  <img
+    src={image.src}
+    class="h-10 w-10 duration-100 ease-in-out group-hover:-translate-y-4"
+    width={40}
+    height={40}
+    alt={`${name} icon`}
+  />
+</li>

@@ -1,83 +1,12 @@
 ---
+import Presentation from "../components/sections/Presentation.astro";
+import VidaLaboral from "../components/sections/VidaLaboral.astro";
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import { Icon } from "astro-icon";
-import LinkButton from "../components/LinkButton.astro";
-import SectionTitle from "../components/SectionTitle.astro";
-import TimelineSection from "../components/TimelineSection.astro";
 ---
 
 <Layout title="Óscar Veiga Menéndez">
   <main class="container mx-auto">
-    <section class="h-screen flex flex-col justify-center items-center">
-      <div class="flex flex-col gap-6">
-        <div>
-          <h1 class="text-8xl font-bold text-vsc-500">Óscar</h1>
-          <h1 class="text-8xl font-bold text-gray-700">Veiga Menéndez</h1>
-        </div>
-        <h2 class="text-4xl font-semibold text-gray-400">Desarrrollador de software</h2>
-        <ul
-          class="flex [&>li]:pr-3 [&>li>svg]:w-10 [&>li>svg]:h-10 [&>li>svg]:duration-100 [&>li>svg]:ease-in-out [&>li:hover>svg]:-translate-y-6"
-        >
-          <li><Icon pack="logos" name="java" /></li>
-          <li><Icon pack="logos" name="javascript" /></li>
-          <li>
-            <Icon class="text-[#3178C6]" pack="simple-icons" name="typescript" />
-          </li>
-          <li><Icon pack="logos" name="spring-icon" /></li>
-          <li><Icon pack="simple-icons" name="express" /></li>
-          <li><Icon pack="logos" name="react" /></li>
-          <li><Icon pack="cib" name="next-js" /></li>
-          <li><Icon pack="logos" name="expo-icon" /></li>
-          <li><Icon pack="logos" name="prisma" /></li>
-        </ul>
-        <div class="flex justify-end gap-8 mt-2">
-          <LinkButton
-            href="https://www.linkedin.com/in/%C3%B3scar-veiga-men%C3%A9ndez-2b0502223/"
-            icon={{ pack: "fa-brands", name: "linkedin" }}>LinkedIn</LinkButton
-          >
-          <LinkButton href="https://github.com/oveigam" icon={{ pack: "fa-brands", name: "github" }}>Github</LinkButton>
-        </div>
-      </div>
-    </section>
-
-    <section class="p-48">
-      <SectionTitle title="Vida laboral" />
-      <TimelineSection
-        date="2015 - 2017"
-        title="Ciclo Superior en Desarrollo de Aplicaciones Multiplataforma"
-        company="IES Fernando Wirtz Suárez"
-      />
-      <TimelineSection
-        flip
-        date="2017 - 2018"
-        title="Mantenimiento en Integración de datos EAI"
-        client="Inditex"
-        company="Altia Consultores S.L."
-        tech={["ESQL", "IBM MQ / MQSeries"]}
-      />
-      <TimelineSection
-        date="2018 - 2020"
-        title="Mantenimiento SAFEPAL"
-        company="Altia Consultores S.L."
-        client="Inditex"
-        tech={["Java", "Spring", "GWT"]}
-      />
-      <TimelineSection
-        flip
-        date="2020 - 2022"
-        title="Mantenimiento Maestros Financieros"
-        company="Altia Consultores S.L."
-        client="Inditex"
-        tech={["Java", "Javascript", "Spring", "React"]}
-      />
-      <TimelineSection
-        date="2022 - Present"
-        title="Aplicación gestión ciclo de vida de hotel"
-        company="AT Sistemas"
-        client="Hoteles Meliá"
-        tech={["Typescript", "Express", "React"]}
-      />
-    </section>
+    <Presentation />
+    <VidaLaboral />
   </main>
 </Layout>

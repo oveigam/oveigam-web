@@ -1,0 +1,20 @@
+---
+import GitHubButton from "../GitHubButton.astro";
+import LinkedInButton from "../LinkedInButton.astro";
+import TechList from "../tech-list/TechList.astro";
+---
+
+<section class="flex h-screen flex-col items-center justify-center">
+  <div class="flex flex-col gap-8">
+    <div>
+      <h1 class="text-8xl font-bold text-vsc-500">Óscar</h1>
+      <h1 class="text-8xl font-bold text-gray-700">Veiga Menéndez</h1>
+    </div>
+    <h2 class="text-4xl font-semibold text-gray-400">Desarrrollador de software</h2>
+    <TechList />
+    <div class="mt-4 flex justify-end gap-8">
+      <LinkedInButton />
+      <GitHubButton />
+    </div>
+  </div>
+</section>
