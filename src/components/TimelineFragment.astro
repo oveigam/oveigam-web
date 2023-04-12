@@ -17,11 +17,11 @@ const { date, title, client, company, tech, flip = false } = Astro.props;
     <div class="h-3 w-3 rounded-full bg-vsc-500"></div>
   </div>
   <div class={`flex-1 py-4 self-center`}>
-    <h3 class={`text-xl font-bold ${flip ? "text-end" : ""}`}>
+    <h3 class={`text-lg md:text-xl font-bold ${flip ? "text-end" : ""}`}>
       {title}
     </h3>
     <div class="mb-3 mt-1">
-      <h4 class={`text-lg italic text-gray-500 leading-5 ${flip ? "text-end" : ""}`}>{company}</h4>
+      <h4 class={`text-md md:text-lg italic text-gray-500 leading-5 ${flip ? "text-end" : ""}`}>{company}</h4>
       {client && <h4 class={`italic leading-5 text-gray-500 ${flip ? "text-end" : ""}`}>{client}</h4>}
     </div>
     {
