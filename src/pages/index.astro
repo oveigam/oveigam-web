@@ -1,5 +1,6 @@
 ---
-import LinkButton from "../components/LinkButton.astro";
+import GitHubButton from "../components/GitHubButton.astro";
+import LinkedInButton from "../components/LinkedInButton.astro";
 import SectionTitle from "../components/SectionTitle.astro";
 import TimelineSection from "../components/TimelineSection.astro";
 import TechList from "../components/tech-list/TechList.astro";
@@ -9,21 +10,16 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Óscar Veiga Menéndez">
   <main class="container mx-auto">
     <section class="flex h-screen flex-col items-center justify-center">
-      <div class="flex flex-col gap-6">
+      <div class="flex flex-col gap-8">
         <div>
           <h1 class="text-8xl font-bold text-vsc-500">Óscar</h1>
           <h1 class="text-8xl font-bold text-gray-700">Veiga Menéndez</h1>
         </div>
         <h2 class="text-4xl font-semibold text-gray-400">Desarrrollador de software</h2>
         <TechList />
-        <div class="mt-2 flex justify-end gap-8">
-          <LinkButton
-            href="https://www.linkedin.com/in/%C3%B3scar-veiga-men%C3%A9ndez-2b0502223/"
-            icon={{ pack: "fa-brands", name: "linkedin" }}
-          >
-            LinkedIn
-          </LinkButton>
-          <LinkButton href="https://github.com/oveigam" icon={{ pack: "fa-brands", name: "github" }}>Github</LinkButton>
+        <div class="mt-4 flex justify-end gap-8">
+          <LinkedInButton />
+          <GitHubButton />
         </div>
       </div>
     </section>
