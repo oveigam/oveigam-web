@@ -11,7 +11,11 @@ export interface Props {
 const { date, title, client, company, tech, flip = false } = Astro.props;
 ---
 
-<div class={`flex items-stretch justify-center gap-12 min-h-[240px] ${flip ? "flex-row-reverse" : ""}`}>
+<div
+  class={`flex items-stretch justify-center px-4 md:px-0 gap-4 md:gap-8 lg:gap-12 min-h-[240px] ${
+    flip ? "flex-row-reverse" : ""
+  }`}
+>
   <p class={`flex-1 italic self-center ${!flip ? "text-end" : ""}`}>{date}</p>
   <div class="flex w-[2px] flex-col items-center justify-center bg-vsc-500">
     <div class="h-3 w-3 rounded-full bg-vsc-500"></div>
