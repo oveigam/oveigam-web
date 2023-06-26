@@ -1,6 +1,8 @@
 ---
 import "@fontsource/urbanist";
 
+import Umami from "./../components/analytics/Umami.astro"
+
 import thumbnail from "../assets/thumbnail.webp";
 
 export interface Props {
@@ -32,6 +34,9 @@ const { title } = Astro.props;
     <meta name="twitter:title" content="Óscar Veiga Menéndez" />
     <meta name="twitter:description" content="Óscar Veiga personal webpage" />
     <meta name="twitter:image" content={thumbnail.src} />
+
+    {import.meta.env.PROD && <Umami client:idle />}
+    
   </head>
   <body class="bg-slate-50">
     <slot />
