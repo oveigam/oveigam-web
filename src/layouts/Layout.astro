@@ -33,6 +33,7 @@ const { title } = Astro.props;
     <meta name="twitter:description" content="Óscar Veiga personal webpage" />
     <meta name="twitter:image" content={thumbnail.src} />
 
+    <!-- Save umami.disabled to the browser local storage to ignore my own analytics -->
     {
       import.meta.env.PROD && (
         <script
