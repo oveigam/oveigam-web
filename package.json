@@ -9,7 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "pretty": "prettier --write --plugin-search-dir=. ."
+    "pretty": "prettier --write --plugin=prettier-plugin-astro --plugin=prettier-plugin-tailwindcss ."
   },
   "dependencies": {
     "@astrojs/tailwind": "^4.0.0",
